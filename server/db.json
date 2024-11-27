@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": "0d1c",
+      "fname": "Akshay",
+      "lname": "Jadhav",
+      "age": "27",
+      "gender": "Male",
+      "occuption": "Team Lead",
+      "mail": "a@gmail.com",
+      "phone": "9527136223",
+      "city": "Kolhapur",
+      "img": "https://img.freepik.com/premium-photo/anime-male-avatar_950633-956.jpg"
+    },
+    {
+      "id": "d079",
+      "fname": "Jyoti",
+      "lname": "Potdar",
+      "age": "23",
+      "gender": "Female",
+      "occuption": "Developer",
+      "mail": "a@gmail.com",
+      "phone": "54678",
+      "city": "Kolhapur",
+      "img": "https://imgv3.fotor.com/images/gallery/girl-mega-anime-avatar-with-black-long-hair-made-in-fotor-anime-avatar-creator.jpg"
+    },
+    {
+      "id": "db8a",
+      "fname": "Anushri",
+      "lname": "Sewalkar",
+      "age": "29",
+      "gender": "Female",
+      "occuption": "HR",
+      "mail": "anu@gmail.com",
+      "phone": "7841256398",
+      "city": "Nagpur",
+      "img": "https://marketplace.canva.com/EAFltPVX5QA/1/0/1600w/canva-cute-cartoon-anime-girl-avatar-ZHBl2NicxII.jpg"
+    },
+    {
+      "id": "9a99",
+      "fname": "Abhi",
+      "lname": "Potdar",
+      "age": "31",
+      "gender": "Male",
+      "occuption": "CA",
+      "mail": "abhi@gmail.com",
+      "phone": "6587413398",
+      "city": "Kolhapur",
+      "img": "https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/eef2111a-46bb-4d51-be31-2376f9f9f197/36cefdab-e83c-4bdc-939d-5d5b068d89da.png"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+
+<div class="flex justify-between p-2 bg-slate-100 mb-2">
+    <div>&nbsp;</div>
+    <h2>User Cards</h2>
+    <button (click)="addUser()" class="btn btn-primary btn-md">Add New User</button>
+</div>
+
+<div class="container">
+    <ul class="grid grid-cols-[500px_500px] gap-14 items-center justify-center">
+        <li *ngFor="let item of allUsers; let i = index">
+            <div class="rounded-xl bg-red-5d00 grid grid-cols-[190px_1fr_1fr] gap-4  border-[6px] border-white  shadow-lg relative" [ngClass]="item.gender == 'Male'? 'male_bg':'female_bg'">
+                <div class="flex flex-col justify-center relative">
+                    <img src="{{item.img}}" alt="profile" class="object-cover grow rounded-lg">
+                    <div class="grid grid-cols-3 items-end gap-2 grow mb-1.5 absolute w-full p-1 place-items-center -bottom-[6px] rounded-bl-[4px]">
+                        <div class="w-[30px] h-[30px] grid place-content-center rounded-lg bg-white shadow-[3px_3px_5px_#00000045]">
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img src="../../assets/Instagram_logo_2022.svg.png" alt="" class="w-[22px]">
+                            </a>
+                           
+                        </div>
+                        <div class="w-[30px] h-[30px] grid place-content-center rounded-lg bg-white shadow-[3px_3px_5px_#00000045]">
+                            <a href="https://www.linkedin.com/" target="_blank"><img src="../../assets/LinkedIn_logo_initials.png" alt="" class="w-[22px]"></a>
+                        </div>
+                        <div class="w-[30px] h-[30px] grid place-content-center rounded-lg bg-white shadow-[3px_3px_5px_#00000045]">
+                            <a href="https://github.com/" target="_blank"><img src="../../assets/Octicons-mark-github.svg" alt="" class="w-[22px]"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-2 flex flex-col gap-2 py-4 pr-4 pl-0">
+                    <div class="flex flex-col gap-1 ">
+                        <h4 class="card-title uppercase font-bold leading-none mb-1">{{item.fname}} {{item.lname}}</h4>
+                        <div class="flex justify-between items-center mb-3">
+                            <h5 class="text-gray-500 mb-0">{{item.occuption}}</h5>
+                            <img *ngIf="item.gender == 'Male'" src="../../assets/male_symbol-removebg-preview.png" alt="" class="w-11 h-auto absolute top-[36px] right-[17px]">
+                            <img *ngIf="item.gender == 'Female'" src="../../assets/female_symbol-removebg-preview.png" alt="" class="w-[2.2rem] h-auto absolute top-[36px] right-[17px]">
+                        </div>
+                        
+                        <div class="flex flex-col gap-2">
+                            <div class="grid grid-cols-[auto_1fr] gap-x-2 gap-y-1 items-center">
+                                <div class="text-gray-500">Age:</div>
+                                <div>{{item.age}} Years</div>
+
+                                <div class="text-gray-500">Email:</div>
+                                <div>{{item.mail}}</div>
+
+                                <div class="text-gray-500">Phone:</div>
+                                <div>{{item.phone}}</div>
+
+                                <div class="text-gray-500">City:</div>
+                                <div>{{item.city}}</div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end gap-2">
+                            <button (click)="editUser(item)" class="btn btn-primary btn-sm !flex gap-2 items-center">
+                                <span><img src="../../assets/edit.png" alt="" class="w-4"></span>
+                                 <span>Edit</span></button>
+                            <button (click)="deleteUser(item)" class="btn btn-outline-danger btn-sm">
+                                <img src="../../assets/delete (2).png" alt="" class="w-4">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="card bg-light mb-3 shadow-sm">
+                <div class="card-header">
+                    <div class="flex gap-1">
+                        <img src="{{item.img}}" alt="profile">
+                        <h5 class="card-title">{{item.fname}} {{item.lname}}</h5>
+                    </div>
+                </div>
+                <div class="card-body ">
+                  <div class="grid grid-cols-[auto_1fr] gap-2 items-center">
+                      <div>Age:</div><div>{{item.age}}</div>
+                      <div>Gender:</div><div>{{item.gender}}</div>
+                      <div>Occuption:</div><div>{{item.occuption}}</div>
+                      <div>Email:</div><div>{{item.mail}}</div>
+                      <div>Phone:</div><div>{{item.phone}}</div>
+                      <div>City:</div><div>{{item.city}}</div>
+                  </div>
+                </div>
+                <div class="card-footer flex gap-2 justify-end">
+                    <button (click)="editUser(item)" class="btn btn-primary">Edit</button>
+                    <button (click)="deleteUser(item)" class="btn btn-danger">Delete</button>
+                  </div>
+              </div> -->
+        </li>
+    </ul>
+</div>
+
+
+

@@ -1,0 +1,73 @@
+<div class="container flex flex-col items-center p-3 ">
+    <div class="w-1/2 bg-slate-100  p-3 rounded-lg shadow">
+        <form [formGroup]="userForm" >
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" formControlName="fname" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" formControlName="lname" class="form-control">
+                </div>
+            </div>
+            <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="surname">Age:</label>
+                <input type="text" id="age" formControlName="age" class="form-control">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="surname">Gender:</label>
+                <!-- <input type="text" id="gender" formControlName="gender" class="form-control"> -->
+
+                <div>
+                    <label>
+                        <input type="radio" formControlName="gender" value="Male" /> Male
+                    </label>
+                    <label class="ml-4">
+                        <input type="radio" formControlName="gender" value="Female" /> Female
+                    </label>
+                    <label class="ml-4">
+                        <input type="radio" formControlName="gender" value="Other" /> Other
+                    </label>
+                </div>
+            </div>
+            </div>
+           
+
+            <div class="form-group">
+                <label for="surname">Occuption:</label>
+                <input type="text" id="occuption" formControlName="occuption" class="form-control">
+            </div>
+
+            <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="surname">Email:</label>
+                <input type="text" id="mail" formControlName="mail" class="form-control">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="surname">Phone:</label>
+                <input type="text" id="phone" formControlName="phone" class="form-control">
+            </div>
+        </div>
+            <div class="form-group">
+                <label for="surname">City:</label>
+                <input type="text" id="city" formControlName="city" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="surname">Upload Image:</label>
+                <!-- <input type="file" id="img" formControlName="img" class="form-control"> -->
+                <input type="text" id="img" formControlName="img" class="form-control">
+            </div>
+        </form>
+
+        <div class="flex justify-end gap-2">
+            <button type="submit" (click)="onSubmit()" class="btn btn-primary btn-md">Add User</button>
+            <button type="submit" (click)="cancel()" class="btn btn-outline-danger btn-md">Cancel</button>
+        </div>
+    </div>
+</div>
+
